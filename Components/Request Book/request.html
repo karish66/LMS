@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Request Book</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="request.css" rel="stylesheet">
+</head>
+	
+<body>
+	<div class="form">
+	  <form action="">
+		<div class="xyz">
+		  <input type="text" id="title" placeholder="Title" name="title">
+		</div>
+		<div class="xyz">
+		  <input type="text" id="author" placeholder="Author" name="author">
+		</div>
+		<div class="xyz">
+		  <input type="number" id="edition" placeholder="Edition" name="edition" min="1" max="999">
+		</div>
+		<div class="xyz">
+		  <input type="text" id="publisher" placeholder="Publisher" name="publisher">
+		</div>
+		<div class="xyz">
+		  <input type="text" id="date" placeholder="Date Needed By" name="date" onfocus="(this.type='date')">
+		</div>
+		  
+		 <div class="xyz">
+			 <label>Need Level :</label>
+			 <input type="radio" name="optradio" checked>Slight
+			 <input type="radio" name="optradio">Moderate
+			 <input type="radio" name="optradio">Extreme	 
+		 </div>
+		  
+		<div class="xyz">
+		  <textarea type="text" class="form-control" id="description" placeholder="Description" rows="5"></textarea>
+		</div>
+		
+		 <div class="xyz">
+			  <label>Department :</label>
+			  <select id="department">
+				<option>Bachelors in Computer Application</option>
+				<option>Biotechnology</option>
+				<option>Computer Science and Engineering</option>
+				<option>Civil Engineering</option>  
+				<option>Electrical and Electronics Engg.</option>
+				<option>Electronics and Communication Engg.</option>
+				<option>Information Technology</option>
+				<option>Master of Business Administration</option>
+				<option>Master in Computer Application</option>
+				<option>Mechanical Engineering</option>
+			  </select> 
+		  </div>
+		
+		<div class="xyz btn">
+			<button type="submit" class="button">Submit</button>
+			<button type="reset" class="button">Reset</button>
+		 </div>
+	  </form>
+	</div>
+</body>
+</html>

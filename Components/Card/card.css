@@ -1,0 +1,118 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.card{
+    height: 22.51%;
+    width: 66.40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    background: rgba(204,204,204,1);
+}
+.book-detail {
+    height: 78.05% ;
+    width: 70.94% ;
+    display: flex;
+    margin :20px;
+}
+.one img {
+    height: 100%;
+    width: 120px;
+    background: rgba(253,248,248,1);
+    margin-right: 25px;
+}
+.top{
+    display: flex;
+}
+
+.heading p{
+    font-size: 30px;
+    font-family: "Bree-Serif";
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(102,102,102,1);
+    margin-top: 0px; 
+    margin-bottom: 0px;
+    padding-bottom: 2px;
+}
+.bottom{
+    display: flex;
+}
+.number{
+    height: 30px;
+    width: 12.60%;
+    text-align: center;
+    margin-left: 10px;
+    background: rgba(255,255,255,0.81);
+    border-radius: 15px;
+}
+
+.number p{
+    margin-top: 0px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1.20 em;
+    font-style: normal;
+    color: rgba(102,102,102,1);
+}
+.about p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.40 em;
+    font-style: normal;
+    color: rgba(102,102,102,1);   
+}
+.bottom{
+    margin-top: 5px;
+}
+.author p{
+    margin-top: 0px;
+    margin-left: 250px;
+    font-size: "Bree-Serif";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.40 em;
+    font-style: normal;
+    color: rgba(102,102,102,1); 
+}
+.link a{
+    text-decoration: none;
+    font-family: "Bree-serif";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.40 em;
+    font-style: normal;
+    color: rgba(102,102,102,1);  
+}
+
+.icon p{
+    font-size: 25px;
+}
+.button{
+    background: rgba(255,255,255,0.81);
+    height: 40px;
+    width: 150px;
+    border-radius:7px;
+    margin-top: -20px;
+}
+.button p{
+    text-align: center;
+    padding-top: 5px;
+    font-family: "Bree-Serif";
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.40 em;
+    font-style: normal;
+    color: rgba(102,102,102,1);
+}
+.icon {
+    
+}

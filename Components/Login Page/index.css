@@ -1,0 +1,90 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    height: 62.5%;
+    width: 57.29%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid rgba(204,204,204,1);
+}
+.heading{
+    height: 29.33%;
+    width: 100%;
+    background: rgba(44,50,118,0.74);
+}
+.heading p{
+    margin: 0px;
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400;
+    font-size:65px;
+    color: rgba(255,255,255,1);
+    text-align: center;
+    padding: 50px 250px 0px 0px;
+}
+
+.form {
+    height:44.93%;
+    width: 91%;
+/*    margin:40px 10px;*/
+}
+.input-group{
+    height: 57.86%;
+    width: 100%;
+}
+.form input{
+    margin: 20px;
+}
+
+.form input[type="text"],
+.form input[type="password"]{
+    border: none;
+    border-bottom: 1px solid rgba(44,50,118,0.74);
+    outline: none;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 45px;
+    color: rgba(188,188,188,1);
+    font-weight: 400;
+    line-height: 0.7;
+}
+
+.form input[type="text"]:focus,
+.form input[type="password"]:focus{
+    border-bottom: 1px solid rgba(44,50,118,0.74);
+}
+
+.options{
+    display:flex;
+    margin: 100px 25px;
+}
+
+.option1 a{
+    font-family: "Verdana";
+    font-size: 30px;
+    color: rgba(63,37,145,1);
+    font-weight: 400;
+    font-style: normal;
+    line-height: 0.7;
+    text-decoration: none;
+}
+
+.option2 {
+    background: rgba(44,50,118,0.74);
+    height: 20.77%;
+    width: 21.97%;
+    margin-left: 275px;
+}
+.option2 p{
+    color: rgba(255,255,255,1);
+    font-weight: 400;
+    font-style: normal;
+    line-height: 0.7;
+    font-family: "Verdana";
+    text-align: center;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dashboard</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" media="screen" href="../CSS/style.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<script src="../JS/main.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	
+	<body>
+		<div class="main" >
+			<div class="sidebar">
+				<div class = rectangle1>
+					<div class="top-icons">
+						<div class="icon1"><i class="fa fa-cog" aria-hidden="true"></i></div>
+						<div class="icon2"><i class="fa fa-lock" aria-hidden="true"></i></div>
+					</div>
+				
+					<div class="profile">
+						<div class="profile-img" >
+							<img id="man-icon" src="../Images/manicon.jpg" alt="Man Icon">
+						</div>
+						<div class = "profile-name">Alice Woodley</div>
+					</div>
+				</div>
+				<div class="rectangle2">
+					<ul>
+						<div class="opt">
+							<i id="opt-icon" class="fa fa-home"></i>
+							<li><a href="#">PROFILE</a></li>
+						</div>
+						<div class="opt">
+							<i id="opt-icon" class="fa fa-bar-chart"></i>
+							<li><a href="#">STATISTICS</a></li>
+						</div>
+						<div class="opt">
+							<i id="opt-icon" class="fa fa-book"></i>
+							<li><a href="#">LIBRARY</a></li>
+						</div>
+						<div class="opt">
+							<i id="opt-icon" class="fa fa-send-o"></i>
+							<li><a href="#">ANNOUNCEMENT</a></li>
+						</div>
+						<div class="opt">
+							<i id="opt-icon" class="fa fa-list-alt"></i>
+							<li><a href="#">ABOUT US</a></li>
+						</div>
+						<div class="opt">
+							<i id="opt-icon" class="fa fa-phone"></i>
+							<li><a href="#">CONTACT</a></li>
+						</div>
+					</ul>
+				</div>
+			</div>
+
+			<div class="dashboard">
+				<div class="submenu">
+						<ul>
+							<div class="item"><li><a href="index.html" >DASHBOARD</a></li></div>
+							<div class="item"><li><a href="request.html" >REQUEST BOOK</a></li></div>
+							<div class="item"><li><a href="history.html">HISTORY</a></li></div>
+							<div class="item"><li><a href="fine.html">FINE</a></li></div>
+							<div class="item"><li><a href="notification.html">NOTIFICATION</a></li></div>
+						</ul>
+				</div>
+				
+				<div class="notification">
+					<div class="notification-card" id="nc">
+							<div class="title-bar">
+								<div class="R-ID">762367</div>
+								<div class="close" onclick="cross()"><i class="fa fa-close" style="font-size: 30px"></i></div>
+							</div>
+							 <div class="BookName">
+								 <p>Mathematics</p>
+							 </div>
+							 <div class="AutherName">
+								 <p>RD Sharma</p>
+							 </div>
+							 <div class="timer">
+							 </div>
+							 <button class="qr">get QRC code</button>
+					</div>
+					<div class="notification-card" id="nc">
+							<div class="title-bar">
+								<div class="R-ID">762367</div>
+								<div class="close" onclick="cross()"><i class="fa fa-close" style="font-size: 30px"></i></div>
+							</div>
+							 <div class="BookName">
+								 <p>Mathematics</p>
+							 </div>
+							 <div class="AutherName">
+								 <p>RD Sharma</p>
+							 </div>
+							 <div class="timer">
+							 </div>
+							 <button class="qr">get QRC code</button>
+					</div>
+					<div class="notification-card" id="nc">
+							<div class="title-bar">
+								<div class="R-ID">762367</div>
+								<div class="close" onclick="cross()"><i class="fa fa-close" style="font-size: 30px"></i></div>
+							</div>
+							 <div class="BookName">
+								 <p>Mathematics</p>
+							 </div>
+							 <div class="AutherName">
+								 <p>RD Sharma</p>
+							 </div>
+							 <div class="timer">
+							 </div>
+							 <button class="qr">get QRC code</button>
+					</div>
+					<div class="notification-card" id="nc">
+							<div class="title-bar">
+								<div class="R-ID">762367</div>
+								<div class="close" onclick="cross()"><i class="fa fa-close" style="font-size: 30px"></i></div>
+							</div>
+							 <div class="BookName">
+								 <p>Mathematics</p>
+							 </div>
+							 <div class="AutherName">
+								 <p>RD Sharma</p>
+							 </div>
+							 <div class="timer">
+							 </div>
+							 <button class="qr" onclick="document.getElementById('id01').style.display='block'">get QR code</button>
+					</div>
+				</div>
+				
+				<div id="id01" class="w3-modal">
+									<div class="w3-modal-content" style="height:350px;width:350px;">
+										<div class="w3-container w3-white" style="height:350px;width:350px;">
+											<span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+										<img src="" style="width:100%">
+										</div>
+									</div>
+								</div>
+				
+			</div>
+
+				
+			
+		</div>
+	</body>
+</html>

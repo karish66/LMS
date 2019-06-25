@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dashboard</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" media="screen" href="../CSS/style.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<script src="../JS/main.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$(".btn-G").click(function(){
+					alert("We have taken your request into our consideration. Stay tuned.");
+				});
+			});
+		</script>
+	</head>
+	
+	<body>
+		<div class="main" >
+			<div class="sidebar">
+				<div class = rectangle1>
+					<div class="top-icons">
+						<div class="icon1"><i class="fa fa-cog" aria-hidden="true"></i></div>
+						<div class="icon2"><i class="fa fa-lock" aria-hidden="true"></i></div>
+					</div>
+				
+					<div class="profile">
+						<div class="profile-img" >
+							<img id="man-icon" src="../Images/manicon.jpg" alt="Man Icon">
+						</div>
+						<div class = "profile-name">Alice Woodley</div>
+					</div>
+				</div>
+				<div class="rectangle2">
+					<ul>
+						<div class="opt">
+							<i id="opt-icon" class="fa fa-home"></i>
+							<li><a href="#">PROFILE</a></li>
+						</div>
+						<div class="opt">
+							<i id="opt-icon" class="fa fa-bar-chart"></i>
+							<li><a href="#">STATISTICS</a></li>
+						</div>
+						<div class="opt">
+							<i id="opt-icon" class="fa fa-book"></i>
+							<li><a href="#">LIBRARY</a></li>
+						</div>
+						<div class="opt">
+							<i id="opt-icon" class="fa fa-send-o"></i>
+							<li><a href="#">ANNOUNCEMENT</a></li>
+						</div>
+						<div class="opt">
+							<i id="opt-icon" class="fa fa-list-alt"></i>
+							<li><a href="#">ABOUT US</a></li>
+						</div>
+						<div class="opt">
+							<i id="opt-icon" class="fa fa-phone"></i>
+							<li><a href="#">CONTACT</a></li>
+						</div>
+					</ul>
+				</div>
+			</div>
+
+			<div class="dashboard">
+				<div class="submenu">
+						<ul>
+							<div class="item"><li><a href="index.html" >DASHBOARD</a></li></div>
+							<div class="item"><li><a href="request.html" >REQUEST BOOK</a></li></div>
+							<div class="item"><li><a href="history.html">HISTORY</a></li></div>
+							<div class="item"><li><a href="fine.html">FINE</a></li></div>
+							<div class="item"><li><a href="notification.html">NOTIFICATION</a></li></div>
+						</ul>
+				</div>
+
+				<div class= form>
+					<form action="">
+						<div class="xyz">
+						  <input type="text" id="title" placeholder="Title" name="title" valur="">
+						</div>
+						<div class="xyz">
+						  <input type="text" id="author" name="author" placeholder="test">
+						</div>
+						<div class="xyz">
+						  <input type="number" id="edition" placeholder="Edition" name="edition" min="1" max="999">
+						</div>
+						<div class="xyz">
+						  <input type="text" id="publisher" placeholder="Publisher" name="publisher">
+						</div>
+						<div class="xyz">
+						  <input type="text" id="date" placeholder="Date Needed By" name="date" onfocus="(this.type='date')">
+						</div>
+
+						 <div class="xyz">
+							 <label>Need Level :</label>
+							 <input type="radio" name="optradio" checked>Slight
+							 <input type="radio" name="optradio">Moderate
+							 <input type="radio" name="optradio">Extreme	 
+						 </div>
+
+						<div class="xyz">
+						  <textarea type="text" class="form-control" id="description" placeholder="Description" rows="5"></textarea>
+						</div>
+
+						 <div class="xyz">
+							  <label>Department :</label>
+							  <select id="department">
+								<option>Bachelors in Computer Application</option>
+								<option>Biotechnology</option>
+								<option>Computer Science and Engineering</option>
+								<option>Civil Engineering</option>  
+								<option>Electrical and Electronics Engg.</option>
+								<option>Electronics and Communication Engg.</option>
+								<option>Information Technology</option>
+								<option>Master of Business Administration</option>
+								<option>Master in Computer Application</option>
+								<option>Mechanical Engineering</option>
+							  </select> 
+						  </div>
+
+						<div class="xyz" id="btn-div">
+							<div class="btn div-green"><button type="submit" class="button btn-G">SUBMIT</button></div>
+							<div class="btn div-red"><button type="reset" class="button btn-R">RESET</button></div>
+						 </div>
+					</form>
+				</div>
+				
+				
+				<div class="copy-right-div" id="cr">
+					<p class="copy-right-text">Copy Right 2018 Autex Automations</p>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>

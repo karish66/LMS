@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.book4 {
+    height: 75%;
+    width: 12.4%;
+    margin: 0 auto;
+    border:5px solid white;
+    d4splay: flex;
+    align-items: center;
+    background:#a17ea7;
+}
+
+.book4-a{
+    height: 15%;
+    width: 100%;
+    background: ;
+    border-bottom: 5px solid white;
+    border-top: 5px solid white;
+    display: flex;
+    align-items: center;
+}

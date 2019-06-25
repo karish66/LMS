@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dashboard</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" media="screen" href="../CSS/style.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="../JS/main.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function () {
+			//you can set this, as long as it's not greater than the slides length
+			var show = 4;
+			var w = $('#slider').width() / show;
+			var l = $('.slide').length;
+
+			$('.slide').width(w);
+			$('#slide-container').width(w * l)
+
+			function slider() {
+				$('.slide:first-child').animate({
+					marginLeft: -w
+				}, 'slow', function () {
+					$(this).appendTo($(this).parent()).css({marginLeft: 0});
+				});
+			}
+			var timer = setInterval(slider, 2000);
+
+			$('#slider').hover(function(){
+				clearInterval(timer);
+			},function(){
+				timer = setInterval(slider, 2000);
+			});
+		});
+		</script>
+	</head>
+	
+	<body>
+		<div class="main" >
+			<div class="sidebar">
+				<div class = rectangle1>
+					<div class="top-icons">
+						<div class="icon1"><i class="fa fa-cog" aria-hidden="true"></i></div>
+						<div class="icon2"><i class="fa fa-lock" aria-hidden="true"></i></div>
+					</div>
+				
+					<div class="profile">
+						<div class="profile-img" >
+							<img id="man-icon" src="../Images/manicon.jpg" alt="Man Icon">
+						</div>
+						<div class = "profile-name">Alice Woodley</div>
+					</div>
+				</div>
+				<div class="rectangle2">
+					<ul>
+						<div class="opt">
+							<i id="opt-icon" class="fa fa-home"></i>
+							<li><a href="#">PROFILE</a></li>
+						</div>
+						<div class="opt">
+							<i id="opt-icon" class="fa fa-bar-chart"></i>
+							<li><a href="#">STATISTICS</a></li>
+						</div>
+						<div class="opt">
+							<i id="opt-icon" class="fa fa-book"></i>
+							<li><a href="#">LIBRARY</a></li>
+						</div>
+						<div class="opt">
+							<i id="opt-icon" class="fa fa-send-o"></i>
+							<li><a href="#">ANNOUNCEMENT</a></li>
+						</div>
+						<div class="opt">
+							<i id="opt-icon" class="fa fa-list-alt"></i>
+							<li><a href="#">ABOUT US</a></li>
+						</div>
+						<div class="opt">
+							<i id="opt-icon" class="fa fa-phone"></i>
+							<li><a href="#">CONTACT</a></li>
+						</div>
+					</ul>
+				</div>
+			</div>
+
+			<div class="dashboard">
+				<div class="submenu" id="test">
+						<ul>
+							<div class="item"><li><a href="index.html" >DASHBOARD</a></li></div>
+							<div class="item"><li><a href="request.html" >REQUEST BOOK</a></li></div>
+							<div class="item"><li><a href="history.html">HISTORY</a></li></div>
+							<div class="item"><li><a href="fine.html">FINE</a></li></div>
+							<div class="item"><li><a href="notification.html">NOTIFICATION</a></li></div>
+						</ul>
+				</div>
+
+				<div class="searchbar">
+					<input id= "search" type="text" placeholder="Search.. " name="search" value="" onmouseover="masterSelection()">
+				</div>
+				
+				<div id="master">
+				</div>
+				
+				<div id="slider">
+					<div id="slide-container">
+						<div class="slide"><img src="../Images/cover1.jpg" alt="cover1"></div>
+						<div class="slide"><img src="../Images/cover2.jpg" alt="cover2"></div>
+						<div class="slide"><img src="../Images/cover3.jpg" alt="cover3"></div>
+						<div class="slide"><img src="../Images/cover7.jpeg" alt="cover4"></div>
+					</div>
+				</div>
+				
+				<div id="book-shelf">
+					<div class="shelf shelf1">
+						<div class="book1">
+							<div class="book-line-1">
+								<div class="book-line-2"></div>
+							</div>
+						</div>
+						<div class="book2">
+							<div class="book2-a">
+								<div class="book2-a1"></div>
+							</div>
+							<div class="book2-b">
+								<div class="book2-b1"></div>
+							</div>
+						</div>
+						<div class="book3">
+							<div class="book3-a">
+								<div class="book3-a1"></div>
+							</div>
+							<div class="book3-b">
+							</div>
+							<div class="book3-c">
+								<div class="book3-c1"></div>
+							</div>
+						</div>
+						<div class="book4">
+							<div class="book4-a">
+							</div>
+						</div>
+						<div class="book2">
+							<div class="book2-a">
+								<div class="book2-a1"></div>
+							</div>
+							<div class="book2-b">
+								<div class="book2-b1"></div>
+							</div>
+						</div>
+					</div>
+					<div class="shelf shelf2">
+					</div>					
+				</div>
+	
+				
+				<div class="copy-right-div" id="cr">
+					<p class="copy-right-text">Copy Right 2018 Autex Automations</p>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>

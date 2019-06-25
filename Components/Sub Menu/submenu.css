@@ -1,0 +1,35 @@
+*{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+}
+.submenu {
+	height: 6.83%;
+	width: 68.17%;
+}
+
+.submenu ul{
+	display: flex;
+}
+.item{
+	width: 19.99%;
+	height: 100%;
+	text-align: center;
+	line-height: 42px;
+}
+.item li{
+	list-style-type: none;
+}
+li a {
+	text-decoration: none;
+	font-family: "Roboto";
+	letter-spacing: 0.5px;
+	font-weight: 400;
+	color: rgba(99,99,115,1);
+}
+li a:hover{
+	border-bottom: 2px solid rgba(152,145,145,1);
+	font-weight: 700;
+	font-weight: bold;
+	color:rgba(99,99,115,1);
+}
